@@ -35,6 +35,7 @@ import co.aospa.xiaomiparts.gestures.GestureUtils;
 import co.aospa.xiaomiparts.thermal.ThermalUtils;
 import co.aospa.xiaomiparts.touch.HighTouchPollingService;
 import co.aospa.xiaomiparts.touch.TouchOrientationService;
+import co.aospa.xiaomiparts.refreshrate.RefreshUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -57,6 +58,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         TouchOrientationService.startService(context);
         ThermalUtils.startService(context);
         GestureUtils.onBootCompleted(context);
+        RefreshUtils.startService(context);
         overrideHdrTypes(context);
     }
 
