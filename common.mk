@@ -376,6 +376,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.radio.build_profile=u-stable
 
 # Sensors
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.sensors.xiaomi.single_tap=true \
+    ro.vendor.sensors.xiaomi.udfps=true
+
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
     android.frameworks.sensorservice@1.0 \
