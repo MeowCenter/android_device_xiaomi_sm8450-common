@@ -378,7 +378,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Sensors
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.sensors.xiaomi.single_tap=true \
-    ro.vendor.sensors.xiaomi.udfps=true
+    ro.vendor.sensors.xiaomi.udfps=true \
+    ro.vendor.sensors.xiaomi.double_tap=true
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
