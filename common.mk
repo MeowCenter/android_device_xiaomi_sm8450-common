@@ -234,6 +234,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.xiaomi_taro.perf.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.xiaomi_taro.perf.sh \
     $(LOCAL_PATH)/rootdir/bin/init.xiaomi_taro.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.xiaomi_taro.sh \
     $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/init/init.touch_report.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch_report.rc \
     $(LOCAL_PATH)/rootdir/etc/init.xiaomi_taro.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xiaomi_taro.perf.rc \
     $(LOCAL_PATH)/rootdir/etc/init.xiaomi_taro.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xiaomi_taro.rc \
     $(LOCAL_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc
