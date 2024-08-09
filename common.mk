@@ -7,6 +7,7 @@
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true 
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -130,6 +131,8 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # Display / Graphics
+TARGET_PANEL_DIMENSION_HAS_EXTRA_PRECISION := true
+
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V2-ndk_platform.vendor \
     vendor.qti.hardware.display.config-V5-ndk_platform.vendor \

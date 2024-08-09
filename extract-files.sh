@@ -88,6 +88,12 @@ function blob_fixup() {
         vendor/etc/qcril_database/upgrade/config/6.0_config.sql)
             sed -i '/persist.vendor.radio.redir_party_num/ s/true/false/g' "${2}"
             ;;
+        vendor/etc/camera/unicorn_enhance_motiontuning.xml|vendor/etc/camera/unicorn_motiontuning.xml)
+            sed -i 's/xml=version/xml version/g' "${2}"
+            ;;
+        vendor/etc/init/hw/init.batterysecret.rc)
+            sed -i 's/on charger/on property:init.svc.vendor.charger=running/g' "${2}"
+            ;;
     esac
 }
 
